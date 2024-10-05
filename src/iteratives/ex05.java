@@ -24,14 +24,15 @@ public class ex05 {
         System.out.println("FACTORIAL DE: ");
         //declarar variable numero
         int num = entrada.nextInt();
+        int fact = 1;
         //mesaje error si el numero no es positivo
         if (num < 0) {
             System.out.println("El número debe ser positivo...");
         } else {
             //realizar el factorial
-             int fact = 1;
-            for (int i =1; i <= num; i++){
-                fact *=1;
+            
+            for (int i = 1; i <= num; i++){
+                fact *= i;
             }
             //mostrar resultado
             System.out.println("El factorial de " + num + " es: " + fact);
