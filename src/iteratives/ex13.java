@@ -29,13 +29,13 @@ public class ex13 {
             }
             System.out.println("El numero es " + num + "? (por favor, escribe: igual, menor o mayor)");
             String respuesta = entrada.nextLine().toLowerCase();
-            if (respuesta.equals("igual")){
-                System.out.println("Lo adiviné! :3");
-                //continuar = false; CORREGIR!!!
+            if (respuesta.equals("menor")){
+                max = num -1;
             } else if (respuesta.equals("mayor")){
                 min = num + 1;
-            } else if (respuesta.equals("menor")){
-                max = num - 1;
+            } else if (respuesta.equals("igual")){
+                System.out.println("Lo adiviné! :3");
+                continuar = false;
             } else {
                 System.out.println("... Repito, responde solo con 'mayor', 'menor' o 'igual'.");
             }
