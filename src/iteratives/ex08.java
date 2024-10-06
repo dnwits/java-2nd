@@ -21,24 +21,27 @@ public class ex08 {
         //de momento indicamos que es falsa hasta detectar un N negativo
         boolean EsNegatiu = false; 
         //indicamos el valor inicial, el maximo permitido y el incremento
-        for (int i = 1; i <= 4; i++) {
-            //pedimos los numeros a leer
-            System.out.println("Introduzca el numero " + i + ": ");
-            int num = entrada.nextInt();
-            //realizamos un incremento en el contador de numeros positivos
-            if (num > 0){
-            Npositius++;
-            } else {
-                //realizamos un incremento en el contador de numeros negativos si detecta alguno
-                EsNegatiu = true; // cambiamos el valor boolean
-                System.out.println("Se han detectado numeros negativos"); //mensaje de detección
-                Nnegatius++;
-                break;
+        int num;
+        do {
+            System.out.println("Introduzca un número (0 para terminar): ");
+            num = entrada.nextInt();
+            // incrementamos el contador de numeros positivos si lo es
+            if (num > 0) {
+                Npositius++;
             }
-        } //mostramos el resultado por pantalla
-        if(EsNegatiu){
-            System.out.println("Se ha introducido " + Nnegatius + " numero negativos.");
-            System.out.println("Se han introducido " + Npositius + " numeros positivos");
+            // incrementamos el contador de numeros negativos si lo es y activamos el booleano
+            else if (num < 0) {
+                EsNegatiu = true;
+                Nnegatius++;
+            }
+            // El bucle continúa hasta que se introduce un 0
+        } while (num != 0);
+        // Mostramos los resultados
+        if (EsNegatiu) {
+            System.out.println("Se han introducido " + Nnegatius + " número(s) negativo(s).");
+        } else {
+            System.out.println("No se han introducido números negativos.");
         }
-    }
+        System.out.println("Se han introducido " + Npositius + " número(s) positivo(s).");
+        }
 }

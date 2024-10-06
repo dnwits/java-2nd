@@ -20,7 +20,7 @@ public class ex07 {
         //de momento indicamos que es falsa hasta detectar un N negativo
         boolean EsNegatiu = false; 
         //indicamos el valor inicial, el maximo permitido y el incremento
-        for (int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 100; i++) {
             //pedimos los numeros a leer
             System.out.println("Introduzca el numero " + i + ": ");
             int num = entrada.nextInt();
