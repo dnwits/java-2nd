@@ -21,6 +21,10 @@ public class ex09 {
             producte= producte * cont;
             cont++; //incrementar el contador para que se cumpla el bucle
         }
+        //for (int i = 1; i <= 10; i++) { FOR PERQUE SON 10 VEGADES!!!!
+            //suma+=i;            
+            //producte*=i;
+        //}
         //mostrar el resultado final por pantalla en cuanto cont >= 10
         System.out.println("la suma és " + suma + " i el producte és " + producte+ ".");
     }

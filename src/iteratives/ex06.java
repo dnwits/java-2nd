@@ -14,15 +14,16 @@ import java.util.Scanner;
  */
 public class ex06 {
     public static void main(String[] args) {
+        //declarar variables
         Scanner entrada = new Scanner(System.in);
         boolean esNegatiu = false;
-        for (int i = 1; i <= 100 ; i++) {
+        for (int i = 1; i <= 10 ; i++) {
             //pedimos que introduzcan los numeros
             System.out.println("Introduzca el numero " + i + ": ");
             int num = entrada.nextInt();
             if (num < 0) {
                 esNegatiu = true; // cambiamos el valor boolean si encontramos un negativo
-                break;
+                //break;
             } 
         }//mensajes si se ha encontrado algun numero negativo o no
          if (esNegatiu) {

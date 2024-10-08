@@ -5,7 +5,8 @@
 package iteratives;
 
 /**
- *
+ * programa que mostra per pantalla els números parells entre l'1 i
+ * el 200, sumant d'1 en 1
  * @author ves8167
  */
 public class ex03 {

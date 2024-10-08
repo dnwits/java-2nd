@@ -30,7 +30,7 @@ public class ex12 {
         else if (b == 0) {
             resultado = 1;
         }
-        //cuando el exponente negativo
+        //si el exponente es negativo
         else {
             for (int i = 1; i <= -b; i++) {
                 resultado *= a;  //multiplicar A por sí mismo B veces (con B en positivo)

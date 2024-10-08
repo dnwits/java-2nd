@@ -18,7 +18,7 @@ public class ex07 {
         int Npositius = 0;
         int Nnegatius = 0;
         //de momento indicamos que es falsa hasta detectar un N negativo
-        boolean EsNegatiu = false; 
+        //boolean EsNegatiu = false; 
         //indicamos el valor inicial, el maximo permitido y el incremento
         for (int i = 1; i <= 100; i++) {
             //pedimos los numeros a leer
@@ -29,13 +29,13 @@ public class ex07 {
             Npositius++;
             } else {
                 //realizamos un incremento en el contador de numeros negativos si detecta alguno
-                EsNegatiu = true; // cambiamos el valor boolean
+                //EsNegatiu = true; // cambiamos el valor boolean
                 Nnegatius++;
             }
         } //mostramos el resultado por pantalla
-        if(EsNegatiu){
+        //if(EsNegatiu){
             System.out.println("Se han leido " + Nnegatius + " numeros negativos.");
             System.out.println("Se han leido " + Npositius + " numeros positivos");
-        }
+        //}
     }
 }

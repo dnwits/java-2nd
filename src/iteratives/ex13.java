@@ -27,6 +27,7 @@ public class ex13 {
             if (num == anterior){
                 num++;
             }
+            //pregunatar si el numero es menor, mayor o igual
             System.out.println("El numero es " + num + "? (por favor, escribe: igual, menor o mayor)");
             String respuesta = entrada.nextLine().toLowerCase();
             if (respuesta.equals("menor")){
