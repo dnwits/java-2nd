@@ -18,7 +18,7 @@ public class ex11 {
         for (int i = cont; i <= 200; i++) {
             //verificar si es par e incremento del contador par
             if (i % 2 == 0){
-                pares += i;
+                pares += i; //o també pares = pares + i;
             //incremento del contador impar si no es par
             } else {
                 impares += i;

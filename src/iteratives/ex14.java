@@ -18,10 +18,11 @@ public class ex14 {
         //pedir la cantidad de € que el usuario quiere
         System.out.println("Escriba la cantidad en €: ");
         int cantidad= entrada.nextInt();
-         int numBitllets, bitllet = 0;
+         int numBitllets, bitllet;
+         bitllet = 500;
         //que la cantidad sea multiplo de 5
         if (cantidad % 5 != 0) {
-            System.out.println("La cantidad debe ser múltiplo de 5.");
+            System.out.println("La cantidad debe ser múltiplo de 5...");
         } else {
             while (cantidad > 0) {
                numBitllets = cantidad / bitllet;

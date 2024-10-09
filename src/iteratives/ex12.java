@@ -14,21 +14,21 @@ import java.util.Scanner;
 public class ex12 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        //pedir al usuario las variables A y B
+        //pedir al usuario las variables A y B, y declararlas
         System.out.println("Introduzca el valor de A (la base): ");
         double a = entrada.nextDouble();
         System.out.println("Introduzca el valor de B (el exponente): ");
         int b = entrada.nextInt();
         double resultado = 1;
-        // si el exponente positivo
-        if (b > 0) {
+        // si el exponente es 0 (cualquier número elevado a 0 es 1)
+        if (b == 0) {
+            resultado = 1;
+        }
+        //si el exponente es mayor a 0 (positivo)
+        else if (b > 0) {
             for (int i = 1; i <= b; i++) {
                 resultado *= a;  //multiplicar A por sí mismo B veces
             }
-        }
-        //si el exponente 0 (cualquier número elevado a 0 es 1)
-        else if (b == 0) {
-            resultado = 1;
         }
         //si el exponente es negativo
         else {
