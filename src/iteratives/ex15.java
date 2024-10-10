@@ -16,19 +16,15 @@ public class ex15 {
         System.out.println("Introduzaca el número del que quiera saber los multiplos: ");
         int num = entrada.nextInt();
         int cont = 0;
-        //int i = 1;
         for (int i = 1; i <= num; i++) {
-        //while
-            if (i % 3 != 0){
-            } else {
-                i++;
-                cont = cont + 1;
+            if (i % 3 == 0){
+                cont++;
             }
+        }
         if (cont > 0){
         System.out.println("Cantidad de multipos de 3 son: "+cont);
-        } else {
-        System.out.println("No hay multiplos...");
-        }
+        //} else {
+        //System.out.println("No hay multiplos...");
         }
     }
 }
