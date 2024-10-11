@@ -13,7 +13,7 @@ public class ex18 {
     public static void main(String[] args) {
         //declarar variable
         int suma = 0;
-        // bucle for ya que es oslo 5 veces
+        // bucle for ya que es solo 5 veces
         for (int i = 1; i <= 5; i++) { // valor inicial, condició e incremento para que se repita
             suma+= i * i; // incrementar sumando el cuadrado de los valores que se crean mediante el for
         } //mostrar resultado

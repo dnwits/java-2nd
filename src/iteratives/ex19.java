@@ -19,10 +19,10 @@ public class ex19 {
         System.out.println("Dime un número: ");
         int num = entrada.nextInt();
         if (num <= 0){ //si el valor es negativo o 0 ig
-                System.out.println("*");
+                System.out.println("*"); //mostrar solo un "*"
         } else {
             for (int i = 1; i <= num; i++) {
-            System.out.print("*"+ " "); //que aparezca "*" hasta llegar al valor num
+            System.out.print("*"); //que aparezca "*" hasta llegar al valor de num
             }
         System.out.println(); //salto después de mostrar resultado
         }

@@ -19,7 +19,7 @@ public class ex20 {
         int num = entrada.nextInt();
         //crear bucle = a valor (se consiguen los valores de 1 hasta num)
         for (int i = 1; i <= num; i++) {
-            for (int m = 1; m <= i; m++) { // bucle dentro de otro para que se repitan
+            for (int m = 1; m <= i; m++) { // bucle dentro de otro para que se repitan los números intermedio
             System.out.print(i); //mostrar los valores de 1 hasta num
             }
         System.out.println(); //salto final

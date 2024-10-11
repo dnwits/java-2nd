@@ -19,27 +19,28 @@ public class ex17 {
         Scanner entrada = new Scanner(System.in);
         //declarar variables
         int num; 
-        int ultimo = -1;
+        int ultimo;
         int totalnums = 0; //numeros aceptados
         int totalerror = 0; //numeros fallados
-        int totalgen=0; //la suma de los anteriores
-        do { //comenzar bucle pidiendo valor inicial
-            System.out.print("Dime un número inicial (0 para terminar): ");
-            num = entrada.nextInt();
-            if (num > ultimo) {
-                if (num != 0) {
-                    totalnums++;  // incrementar los numeros correctos
-                    ultimo = num;  // Actualizar el último número válido
-                }
-            } else if (num != 0) {
+        int totalgen; //la suma de los anteriores (total en general)
+        //pedir valor inical y actualizar ultimo
+        System.out.print("Dime un número inicial (0 para terminar): ");
+        ultimo = entrada.nextInt();
+        totalnums++; //incrementar contador
+        do { //comenzar bucle teniendo valor inical y pidiendo el siguiente
+             System.out.print("Dime un número: ");
+             num = entrada.nextInt();
+            if (num > ultimo) { // nuevo valor mayor que el valor inicial
+                totalnums++;  // incrementar los números correctos
+                ultimo = num;  // actualizar el último número válido  
+            } else if (num != 0) { // si num no el mayor que ultim y diferent de 0
                 totalerror++;  // incrementar contador de numeros fallados
-                System.out.println("Fallo es menor"); //mostrar cuando haya un fallo
-            }
-            totalgen= totalnums + totalerror;
-        } while (num != 0);
+                System.out.println("Fallo es menor."); //mostrar mensaje cuando haya un fallo   
+            }        
+        } while (num != 0); //condición para el bucle, que sea un número diff de cero
         // mostrar resultado
+        totalgen= totalnums + totalerror;
         System.out.println("Total de números introducidos: " + totalgen);
         System.out.println("Números fallados: " + totalerror);
-        
     }
 }

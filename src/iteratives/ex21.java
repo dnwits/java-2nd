@@ -24,7 +24,7 @@ public class ex21 {
         // bucle que comience desde A y llegue a B
         for (int i = a; i <= b; i++) {
             System.out.print(i+" "); //mostrar por pantalla el incremento
-            if (i%2==0){
+            if (i%2==0){ //comprobar que es par
                 cont_pares++; //incrementar contador de pares
             }
         } //mostrar resultado de pares
